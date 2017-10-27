@@ -1,0 +1,7 @@
+Options +FollowSymlinks 
+rewriteEngine On 
+
+RewriteCond %{RERQUEST8FILENAME} !-d 
+RewriteCond %{RERQUEST8FILENAME} !-f 
+
+RewriteRule ^ index.php [L] 
